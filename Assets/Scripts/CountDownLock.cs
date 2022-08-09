@@ -46,6 +46,10 @@ public class CountDownLock : MonoBehaviour
                         GameManager.Game2LockPanel.SetActive(false);
                         GameManager.boolgame2Lock = false;
                         break;
+                    case "lockGame3":
+                        GameManager.Game3LockPanel.SetActive(false);
+                        GameManager.boolgame3Lock = false;
+                        break;
                 }
             
         }

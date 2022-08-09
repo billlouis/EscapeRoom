@@ -20,6 +20,12 @@ public class PanelWin : MonoBehaviour
             GameManager.boolgame2Menang = true;
             GameManager.Game2MenangPanel.SetActive(true);
         }
+        else if(gameWinState == GameManager.gameWinState.game3Menang)
+        {
+            Debug.Log("Menang game3");
+            GameManager.boolgame3Menang = true;
+            GameManager.Game3MenangPanel.SetActive(true);
+        }
     }
     static public void PanelLock(GameManager.gameLockState kunci)
     {
@@ -34,6 +40,12 @@ public class PanelWin : MonoBehaviour
             Debug.Log("Kunci Game2");
             GameManager.boolgame2Lock = true;
             GameManager.Game2LockPanel.SetActive(true);
+        }
+        else if(kunci == GameManager.gameLockState.game3Lock)
+        {
+            Debug.Log("Kunci Game3");
+            GameManager.boolgame3Lock = true;
+            GameManager.Game3LockPanel.SetActive(true);
         }
     }
 }

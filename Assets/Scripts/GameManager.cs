@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
         boolgame1Menang, boolgame2Menang, boolgame3Menang, boolgame4Menang, boolgame5Menang, 
         boolgame1Lock, boolgame2Lock, boolgame3Lock, boolgame4Lock, boolgame5Lock;
 
-    public static GameObject Game1MenangPanel, Game1LockPanel, Game2MenangPanel, Game2LockPanel;
+    public static GameObject Game1MenangPanel, Game1LockPanel, Game2MenangPanel, Game2LockPanel, Game3MenangPanel, Game3LockPanel;
     void Start()
     {
         AdaPanel = false;
@@ -26,9 +26,7 @@ public class GameManager : MonoBehaviour
         Game1LockPanel = GameObject.Find("lockGame1"); Game1LockPanel.SetActive(false);
         Game2MenangPanel = GameObject.Find("ggGame2"); Game2MenangPanel.SetActive(false);
         Game2LockPanel = GameObject.Find("lockGame2"); Game2LockPanel.SetActive(false);
-    }
-    void Update()
-    {
-        
+        Game3MenangPanel = GameObject.Find("ggGame3"); Game3MenangPanel.SetActive(false);
+        Game3LockPanel = GameObject.Find("lockGame3"); Game3LockPanel.SetActive(false);
     }
 }
