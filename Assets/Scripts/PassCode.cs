@@ -16,7 +16,7 @@ public class PassCode : MonoBehaviour
         if (PassTextValue == "314285" || PassTextValue == "314159")
         {
             PanelWin.PanelMenang(GameManager.gameWinState.game2Menang);
-            GameManager.boolgame1Menang = true;
+            GameManager.boolgame2Menang = true;
         }
         else
         {
